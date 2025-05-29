@@ -25,10 +25,9 @@ This tutorial outlines how to create and manage user accounts in Active Director
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Created our User Database
+- Step 2: Implemented Group Policy Objects
+
 
 <h2>Deployment and Configuration Steps</h2>
 </p>
