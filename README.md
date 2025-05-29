@@ -40,7 +40,7 @@ This tutorial outlines how to create and manage user accounts in Active Director
 <p>
 - Open up DC-1 with Remote Desktop Connection with jane_admin. More specifically mydomain.com\jane_admin.
 </p>
-- Now open up PowerShell by going to the Start Menu and typing PowerShell. Right-click "Windows PowerShell ISE" and open as Admin.
+- Now open up PowerShell by going to the Start Menu and typing PowerShell. Right-click "Windows PowerShell ISE" and open it as an Admin.
 <br />
 
 <p>
@@ -49,68 +49,200 @@ This tutorial outlines how to create and manage user accounts in Active Director
 
 </p>
 <p>
--Copy this <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">Script</a> to automate user creation.
+-Copy this <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1">Script</a> to automate user creation. Now go back to PowerShell.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![48](https://github.com/user-attachments/assets/e48e8b9a-7123-4f43-b9f5-a4a0e20fa0a4)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- Back in Powershell ISE, click on the blank page on the top left to create a new file.
 </p>
+- Then paste the script by right-clicking and clicking paste or Ctrl V.
+</p>
+- Lastly, click the play button to run the script.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![49](https://github.com/user-attachments/assets/ec6057ec-63fe-414c-ab96-82ac378a602b)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- You notice at the bottom that we are creating thousands of users, take a note of the password too, at the top. That will be the password for all the users. A lot, right? You don't have to wait for all of the users to keep going. Let's proceed.
 </p>
+
 <br />
-
-
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-
+![50](https://github.com/user-attachments/assets/6b5cc467-7ad6-4fe3-9053-fb3f6e26d899)
+![51](https://github.com/user-attachments/assets/3a650ebd-bb99-4903-a672-03723f2fcb01)
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- Navigate yourself back to " Active Directory Users and Computers".
 </p>
-<br />
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- The pop-up notifies you how many users we have made, click Ok.
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+- Go to the _EMPLOYEES folders and pick a random username. In this case, we will choose bip.soda. With that username in mind, let's log back into Client-1.
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![52](https://github.com/user-attachments/assets/770a8473-8a2e-4707-ba6f-4f9363625466)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- Log into Client-1 with bip.soda.
+</p>
+- Authenticate using the username mydomain.com\bip.soda and password Password1 (generated by the PowerShell script for this lab exercise)
+</p>
+<br />
+
+<p>
+
+![53](https://github.com/user-attachments/assets/8b6ee73a-add3-4584-834d-e549166572cb)
+
+</p>
+<p>
+- Next, we will log back into DC-1 as mydomain.com\jane_admin.
+</p>
+- Right-click the Start Menu and type in run. Open it up and type gpms.msc. This opens up Group Policy Management.
+<br />
+
+
+<p>
+
+![54](https://github.com/user-attachments/assets/dc8d508f-cff9-4481-b8c8-985c3c4345b6)
+
+</p>
+<p>
+- Here, we right-click Default Domain Policy, then click Edit.
 </p>
 <br />
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![55](https://github.com/user-attachments/assets/8d64da56-bd3e-453c-ad7e-707246cf1729)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- We need to access the Account Lockout Policy. To do that, go to Computer Configuration > Policies > Windows Settings > Security Settings > Account Policy > Account Lockout Policy.
 </p>
 <br />
+
+<p>
+
+![56](https://github.com/user-attachments/assets/70fa7040-16d0-4033-8d3c-431b4b44ced9)
+![57](https://github.com/user-attachments/assets/e9e93f42-5796-4436-b31b-871da50c3084)
+
+</p>
+<p>
+- Click on Account lockout duration. Check Define the policy setting and set it for 30 minutes.
+</p>
+- Click ok, then click ok again.
+<br />
+
+<p>
+
+![58](https://github.com/user-attachments/assets/6684192e-5bd1-49fc-b239-d085af0ba01f)
+
+</p>
+<p>
+- Here you can see how we updated the Policy Settings. This can take up to over an hour to take effect.
+</p>
+- I'll tell you a secret, we don't have to wait 60-90 minutes. 😉
+</p>
+<br />
+
+<p>
+
+![59](https://github.com/user-attachments/assets/d3804210-e097-4c92-8c8e-c559926b3484)
+
+</p>
+<p>
+- Navigate yourself back to Client-1 and log in as mydom.com\jane_admin. If it's already up, then bring the browser up.
+</p>
+- Open Command Prompt and enter gpupate /force, Press Enter.
+</p>
+- Like Magic, we just forced the policy to take effect now. Log out of Client-1
+</p>
+<br />
+
+<p>
+
+![60](https://github.com/user-attachments/assets/58d53291-bcd2-4ce1-8dd1-c948258845b1)
+
+</p>
+<p>
+- Try to log in Client-1 again as a user; in this case, we chose bip.soda. (mydomain.com\bip.soda)
+</p>
+- Try to log in about 5 or 6 times with the wrong password. A pop-up will appear telling you your account has been locked.
+
+<p>
+
+![61](https://github.com/user-attachments/assets/a40b7709-6076-47db-8139-222b2d251f54)
+
+</p>
+<p>
+- Head back to DC-1 and head over to Active Directory Users and Computers.
+</p>
+- Right-click mydomain.com and click Find. This way, we will be able to unlock that account we just locked faster.
+<br />
+
+<p>
+
+![62](https://github.com/user-attachments/assets/b7639972-f767-4631-adb1-4451cff7c223)
+
+</p>
+<p>
+- Here we will type in our username, bip.soda. Click Find now. Double click bip.soda
+</p>
+- Navigate yourself to the Account Tab and check the box that says " Unlock account". Click Apply, then Ok.
+</p>
+- You should now be able to lock back into bip.soda under Client-1.
+<br />
+
+
+<p>
+
+![63](https://github.com/user-attachments/assets/8f61cd82-326a-42f1-9f06-e5b5ec216eba)
+
+</p>
+<p>
+Log back into Client-1 as mydomain.com\bip.soda and put in ur password.
+</p>
+- See that? We're in! For Fun, you can double-check which account you're in by going to PowerShell and typing whoami, then hitting Enter.
+<br />
+
+<p>
+
+![64](https://github.com/user-attachments/assets/982a5e65-a0ba-40e1-91f4-31d011435669)
+
+</p>
+<p>
+- There are a lot of things we can do in Active Directory. As you can see, we can rename, delete, Disable accounts, and reset passwords.
+</p>
+- Play around with different users and have some fun figuring out the solution with what you learned in this lab. 
+<br />
+
+<p>
+
+![65](https://github.com/user-attachments/assets/68dbdb39-9370-4d4b-8b24-8248f07887ba)
+
+</p>
+<p>
+- Lastly, let's go back into Client-1 as jane_admin
+</p>
+- Open Event Viewer via Start Menu. Open it as an Admin.
+</p>
+- Open up Windows logs > Security. This will show all the successes and failed attempts for logging in. You can manually check for each user by clicking Find and entering the Username.
+<br />
+
+<h2>Final Thoughts</h2>
+ -
 
