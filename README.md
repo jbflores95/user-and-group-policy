@@ -46,7 +46,7 @@ This tutorial outlines how to create and manage user accounts in Active Director
 
 <p>
 
-![47](https://github.com/user-attachments/assets/b856736c-9c50-4771-8f44-56bf9830d5fd)
+![47](https://github.com/user-attachments/assets/465540b0-4f2f-4c1c-a5e6-d369c8e2a016)
 
 </p>
 <p>
