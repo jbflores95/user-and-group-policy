@@ -225,7 +225,7 @@ Log back into Client-1 as mydomain.com\bip.soda and put in ur password.
 
 </p>
 <p>
-- There are a lot of things we can do in Active Directory. As you can see, we can rename, delete, Disable accounts, and reset passwords.
+- There are a lot of things we can do in Active Directory. As you can see, we can rename, delete, disable accounts, and reset passwords.
 </p>
 - Play around with different users and have some fun figuring out the solution with what you learned in this lab. 
 <br />
@@ -244,5 +244,5 @@ Log back into Client-1 as mydomain.com\bip.soda and put in ur password.
 <br />
 
 <h2>Final Thoughts</h2>
- -
+ - This was a ride. It was a blast learning Active Directory. This lab focused on creating users and Group Policy Objects. The coolest part? Realizing how much power GPOs give you. With a few clicks, you can push settings to hundreds of computers, enforce security rules, and save yourself from manually configuring every single machine. What's next, you say? Learning! I'm eager to learn more about Help Desk and IT. 📖
 
