@@ -10,7 +10,7 @@ This tutorial outlines how to create and manage user accounts in Active Director
 
 <h2>Prerequisites</h2>
 
-- Preparing Ad Infrastructure in Azure
+- [Preparing Ad Infrastructure in Azure](https://github.com/jbflores95/AD-Infrastructure/blob/main/README.md)
 
 <h2>Environments and Technologies Used</h2>
 
