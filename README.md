@@ -165,7 +165,7 @@ This tutorial outlines how to create and manage user accounts in Active Director
 
 </p>
 <p>
-- Navigate yourself back to Client-1 and log in as mydom.com\jane_admin. If it's already up, then bring the browser up.
+- Navigate yourself back to Client-1 and log in as mydom.com\jane_admin. If it's already up, then bring the window up.
 </p>
 - Open Command Prompt and enter gpupate /force, Press Enter.
 </p>
