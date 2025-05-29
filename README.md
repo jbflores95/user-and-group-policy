@@ -1,5 +1,7 @@
 <p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+
+ ![Active_Directory_Local_vs_Active_Directory_en_la_Nube](https://github.com/user-attachments/assets/635536d2-052a-4e95-b8b0-fcecb0b7d7bb)
+
 </p>
 
 <h1>Creating Users And Group Policy Objects</h1>
